@@ -323,5 +323,3 @@ To verify the solution runs completely offline:
 4. Verify processing completes successfully
 
 ---
-
-**Important**: This is a sample implementation. Participants should develop their own solutions that meet all the official challenge requirements and constraints. 
