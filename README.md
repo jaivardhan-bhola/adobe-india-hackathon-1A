@@ -215,10 +215,6 @@ The primary ML model used in Challenge 1a is the **SentenceTransformer** model, 
 - **collections** (`defaultdict`, `Counter`): Specialized data structures for grouping and counting
 - **logging**: System monitoring and debugging
 
-#### System Dependencies
-- **Tesseract OCR**: Text extraction from image-based PDFs
-- **OpenGL libraries**: Image processing support
-
 ### How to Build and Run Your Solution
 
 #### Prerequisites
