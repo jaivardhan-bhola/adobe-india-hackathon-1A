@@ -206,16 +206,4 @@ cat output/sample-document.json | jq '.' # Pretty print JSON
 - **Complex PDFs**: Test with multi-column layouts, images, tables
 - **Large PDFs**: Verify 50-page processing within time limit
 
-
-## Testing Your Solution
-
-### Local Testing (Offline)
-```bash
-# Build the Docker image (this will download models during build)
-docker build --platform linux/amd64 -t pdf-processor .
-
-# Test with sample data (completely offline)
-docker run --rm -v $(pwd)/sample_dataset/pdfs:/app/input:ro -v $(pwd)/test_output:/app/output --network none pdf-processor
-```
-
 ---
