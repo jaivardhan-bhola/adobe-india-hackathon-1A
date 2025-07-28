@@ -180,30 +180,4 @@ docker run --rm \
 4. Generates corresponding JSON files in `/app/output`
 5. Logs processing statistics and completion status
 
-# Verify output format
-ls -la output/
-cat output/sample-document.json | jq '.' # Pretty print JSON
-```
-
-#### Troubleshooting
-- **Memory Issues**: Ensure Docker has access to at least 8GB RAM
-- **Platform Issues**: Verify `--platform linux/amd64` is used in build command
-- **Network Errors**: Confirm `--network none` flag is present during execution
-- **Missing Output**: Check that input PDFs are readable and not corrupted
-
-**Note**: This solution is designed to run completely offline with all dependencies and models pre-downloaded during the Docker build process.
-
-## Implementation Guidelines
-
-### Performance Considerations
-- **Memory Management**: Efficient handling of large PDFs
-- **Processing Speed**: Optimize for sub-10-second execution
-- **Resource Usage**: Stay within 16GB RAM constraint
-- **CPU Utilization**: Efficient use of 8 CPU cores
-
-### Testing Strategy
-- **Simple PDFs**: Test with basic PDF documents
-- **Complex PDFs**: Test with multi-column layouts, images, tables
-- **Large PDFs**: Verify 50-page processing within time limit
-
 ---
