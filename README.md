@@ -45,6 +45,10 @@ This repository contains a solution for Challenge 1A of the Adobe India Hackatho
 - **sentence_transformers:** For semantic similarity (model: `intfloat/e5-small`)
 - **torch:** Backend for sentence_transformers
 - **Standard Python libraries:** pathlib, json, os, collections, re
+* **Model Specifications:**
+    * **Embedding Model**: `intfloat/e5-small` (128MB) - Multilingual sentence transformer ([Research Paper](https://arxiv.org/pdf/2212.03533))
+      - Architecture: 12-layer transformer, 384-dimensional embeddings, 100+ language support
+      - Purpose: Semantic text analysis and cross-document content comparison
 
 ## Building & Running
 ### Build
