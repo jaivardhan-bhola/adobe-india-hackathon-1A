@@ -147,9 +147,6 @@ The primary ML model used in Challenge 1a is the **SentenceTransformer** model, 
 
 #### Build Process
 ```bash
-# Navigate to the solution directory
-cd Challenge-1a/
-
 # Build the Docker image (downloads models during build)
 docker build --platform linux/amd64 -t adobe-pdf-processor:hackathon2025 .
 
